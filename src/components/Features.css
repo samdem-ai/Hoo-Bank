@@ -1,0 +1,167 @@
+.features-section__bill-img {
+  width: 100%;
+}
+
+.features-section {
+  margin-top: 1rem;
+}
+
+.features-section__title {
+  /* font-size: 48px; desktop */
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.features-section__text {
+  /* font-size: 18px; desktop */
+  line-height: 1.7em;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+button:hover {
+  opacity: 0.6;
+  transition: all 0.1s;
+}
+
+.features-section__btn {
+  margin-top: 1.3em;
+  border: none;
+  background-image: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );
+  padding: 1em 1.6em;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #00040e;
+}
+
+.features-section__card {
+  margin: 0 auto;
+  max-width: 85%;
+}
+
+.features-section__card p {
+  font-size: 0.95rem;
+  opacity: 0.7;
+}
+
+.features-section__card.row {
+  gap: 5%;
+  align-items: flex-start;
+  margin-top: 2rem;
+  flex-direction: row;
+}
+
+.features-section__card--highlighted {
+  background-image: linear-gradient(
+    153.47deg,
+    rgba(255, 255, 255, 0) -341.94%,
+    #14101d 95.11%
+  );
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.5) inset;
+  padding: 0 1rem;
+  border-radius: 20px;
+}
+
+.img-container {
+  margin-top: 2rem;
+  max-width: 35px;
+  max-height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(9, 151, 124, 0.1);
+  border-radius: 50%;
+}
+
+.features-section__title--smaller {
+  font-size: 2.225rem;
+}
+
+.features-section__img-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.features-section__card-img {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+@media (width>700px) {
+  .features-section__title {
+    font-size: 48px;
+  }
+  .features-section__text {
+    font-size: 18px;
+  }
+}
+
+@media (width>1000px) {
+  .features-section__handling-money.row,
+  .features-section__deal.row {
+    margin-top: 10rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7rem;
+  }
+
+  .features-section__billing.row {
+    margin-top: 10rem;
+    display: grid;
+    gap: 10%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .features-section__billing .col:nth-child(1) {
+    width: 100%;
+    grid-column-start: 2;
+  }
+
+  .features-section__billing .col:nth-child(2) {
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+
+  .img-container {
+    margin-top: 1rem;
+  }
+
+  .features-section__card.row {
+    gap: 3%;
+  }
+
+  .features-section__card {
+    max-width: 95%;
+  }
+
+  .features-section__card .col h3 {
+    margin-bottom: 0;
+  }
+
+  .features-section__card .col p {
+    margin-top: 0;
+  }
+
+  .features-section__card-container {
+    width: 40%;
+  }
+
+  .features-section__img-container {
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+
+  .features-section__left {
+    width: 50%;
+  }
+}
